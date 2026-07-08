@@ -70,6 +70,12 @@
   .health b{color:#5c3a00}
   .foot{color:#80868b;font-size:12px;text-align:center;margin-top:22px}
   .foot a{color:var(--blue);text-decoration:none}
+  /* section band */
+  .band{display:flex;align-items:baseline;gap:12px;margin:26px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+  .band:first-of-type{margin-top:6px}
+  .band h2{font-size:16px;font-weight:500;letter-spacing:.2px;color:var(--ink)}
+  .band .when{font-size:13px;color:var(--mut)}
+  .band .tag{margin-left:auto;font-size:11px;font-weight:500;color:var(--mut);text-transform:uppercase;letter-spacing:.5px}
 </style>
 </head>
 <body>
@@ -85,6 +91,42 @@
 
   <div class="health">
     <b>Data health:</b> only 4% of leads have a setter assigned as owner in GHL, so per-setter lead-to-booking is directional until round-robin assignment is turned on. Booking counts are exact. Speed-to-lead and talk time are not fully wired yet.
+  </div>
+
+  <!-- ==================== DAILY ==================== -->
+  <div class="band">
+    <h2>Daily</h2><span class="when">Tue Jul 7, 2026</span>
+    <span class="tag">Accountability · posts to #setting 00:30 CST</span>
+  </div>
+
+  <div class="row r6">
+    <div class="card kpi"><div class="lab">Leads Today</div><div class="num">42</div><div class="sub">web 16 · skool 16 · other 10</div></div>
+    <div class="card kpi"><div class="lab">Apps Today</div><div class="num">12</div><div class="sub">webby-applicant</div></div>
+    <div class="card kpi"><div class="lab">Sets Today</div><div class="num accent-b">3</div><div class="sub">inbound 3 · outbound 0</div></div>
+    <div class="card kpi"><div class="lab">Qualified Booked</div><div class="num accent-g">2</div><div class="sub">handed to sales</div></div>
+    <div class="card kpi"><div class="lab">Outbound Sets</div><div class="num accent-r">0</div><div class="sub">self-generated</div></div>
+    <div class="card kpi"><div class="lab">Responses</div><div class="num">—</div><div class="sub">pending wire</div></div>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <h2><span class="dotm"></span>Today by Setter</h2>
+      <table>
+        <thead><tr><th>Setter</th><th>Sets</th><th>Inbound</th><th>Outbound</th><th>Qual. Booked</th><th>Status</th><th>Coach read</th></tr></thead>
+        <tbody>
+          <tr><td class="name">Shibat</td><td>2</td><td>2</td><td>0</td><td>1</td><td><span class="chip c-r">Red</span></td><td style="color:var(--mut)">0 outbound again. Harvesting, not generating. Target 3.</td></tr>
+          <tr><td class="name">Christina</td><td>1</td><td>1</td><td>0</td><td>1</td><td><span class="chip c-r">Red</span></td><td style="color:var(--mut)">1 set, low show rate. Tighten qualification.</td></tr>
+          <tr><td class="name">Mark <span style="color:var(--violet);font-weight:400;font-size:11px">VA</span></td><td>1*</td><td>1</td><td>0</td><td>—</td><td><span class="chip c-a">Effort ok</span></td><td style="color:var(--mut)">Booked 1, no-showed (no phone number). Get phone on every set.</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:11.5px;color:var(--mut);margin-top:12px">*Mark self-reported (not a GHL-tracked seat). Coach reads mirror the nightly #setting cards.</div>
+    </div>
+  </div>
+
+  <!-- ==================== WEEKLY ==================== -->
+  <div class="band">
+    <h2>Weekly</h2><span class="when">Jul 1 – Jul 7, 2026</span>
+    <span class="tag">Outcome · the money view</span>
   </div>
 
   <!-- KPI scorecards -->
